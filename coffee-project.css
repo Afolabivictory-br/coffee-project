@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(51, 4, 4);
+}
+
+.container {
+    width: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: 420px;
+    padding-top: 10px;
+} 
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 50px;
+}
+
+.logo {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nav-links .icons {
+    display: flex;
+    align-content: center;
+    gap: 80px;
+    font-size: 17px;
+    list-style: none;
+}
+
+.nav-links a:link {
+    text-decoration: none;
+}
+
+.nav-links li a {
+    color: white;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+}
+
+.hero-section .hero-section-one {
+    line-height: px;
+    padding: 40px;
+}
+
+.hero-section-one h3 {
+    font-family: "Dancing Script", cursive;
+    font-size: 45px;
+    color: rgb(255, 167, 2);
+}
+
+.hero-section-one h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    color: white;
+    width: 650px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.hero-section-one p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 560px;
+    line-height: 40px;
+}
+
+.hero-links {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.hero-links .order{
+    font-family: "Poppins", sans-serif;
+    border: 1px solid rgb(255, 167, 2);
+    background-color: rgb(255, 167, 2);
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    width: 130px;
+    font-weight: 600;
+}
+
+.hero-links .contact{
+    font-family: "Poppins", sans-serif;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    width: 130px;
+    font-weight: 600;
+}
+
+.cup img {
+    width: 530px;
+    margin-right: 60px;
+}
+
+.icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+    .icon {
+        display: block;
+        color: white;
+        padding-top: 18px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-section {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hero-section-one h3 {
+        font-size: 30px;
+    }
+
+    .hero-section-one h4 {
+        font-size: 25px;
+        line-height: 50px;
+        font-weight: 600;
+        width: 90%;
+    }
+
+    .hero-section-one p {
+        font-size: 15px;
+        color: white;
+        line-height: 40px;
+        width: 90%;
+    }
+
+    .cup img {
+        width: 300px;
+        padding-left: 50px;
+    }
+}
